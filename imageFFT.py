@@ -3,6 +3,7 @@
 import numpy as np
 from PIL import Image
 import trimmer
+import fastfour
 
 mitbillede = trimmer.clovercandidate('IMG_1208.jpg')
 print(mitbillede.billede.format)
@@ -20,9 +21,17 @@ fadeGreened=cropimage
 fadeGreened=trimmer.greenify(fadeGreened,180)
 fadeGreened=trimmer.greenify(fadeGreened,180)
 fadeGreened=trimmer.greenify(fadeGreened,180)
-fadeGreened.show()
+
+tonedGreened = cropimage
+tonedGreened = trimmer.greenifyall(tonedGreened,20)
+tonedGreened = trimmer.greenifyall(tonedGreened,20)
+tonedGreened = trimmer.greenifyall(tonedGreened,20)
+tonedGreened = trimmer.greenOnly(tonedGreened)
+tonedGreened.show()
+
+#fadeGreened.show()
 cropblackedge=trimmer.createBlackCopy(cropimage)[1]
 cropimage.show()
 
-
+fastfour.doFFTonImage(tonedGreened)
 
