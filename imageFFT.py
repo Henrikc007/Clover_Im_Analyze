@@ -4,6 +4,13 @@ import numpy as np
 from PIL import Image
 import trimmer
 import fastfour
+import calculatingGreenArea
+import matplotlib.pyplot as plt
+
+#undersøge frekvensen af det grønne i forhold til hvert pixels samlede lysttyrke
+(xere,yere)=calculatingGreenArea.greenFraction('IMG_1208.jpg')
+
+
 
 mitbillede = trimmer.clovercandidate('IMG_1208.jpg')
 print(mitbillede.billede.format)
@@ -33,5 +40,7 @@ tonedGreened.show()
 cropblackedge=trimmer.createBlackCopy(cropimage)[1]
 cropimage.show()
 
-fastfour.doFFTonImage(tonedGreened)
+#fastfour.doFFTonImage(tonedGreened)
+
+
 
