@@ -32,7 +32,7 @@ plt.savefig('greenAreaLille')
 # fadeGreened=trimmer.greenify(fadeGreened,180)
 # fadeGreened=trimmer.greenify(fadeGreened,180)
 
-# tonedGreened = cropimage
+tonedGreened = Image.open('prototypePath.png')
 # tonedGreened = trimmer.greenifyall(tonedGreened,20)
 # tonedGreened = trimmer.greenifyall(tonedGreened,20)
 # tonedGreened = trimmer.greenifyall(tonedGreened,20)
@@ -43,7 +43,7 @@ plt.savefig('greenAreaLille')
 # cropblackedge=trimmer.createBlackCopy(cropimage)[1]
 # cropimage.show()
 
-#fastfour.doFFTonImage(tonedGreened)
+fastfour.doFFTonImage(tonedGreened)
 
 
 
