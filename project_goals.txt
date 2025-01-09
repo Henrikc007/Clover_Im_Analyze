@@ -1,0 +1,21 @@
+This page contains the goal of this project with minimal requirements for the app, thoughts about some wishfull abilities. I also include a proejct planning and begin writing the readme file.
+
+key goals will be:
+- clover recognition in an image, finding a spot with a clover (or more than one).
+- should look like a classic image detection algorithm making a box at a position containing one clover.
+- training and testing on images with one plant at the time.
+- traing and testing to find a 4-clover if the images is detected as containing a 4-clover
+
+good abilities and key koncept will be:
+- to find areas in a picture where there is good chances of finding a clover, and more precise good chances of finding a 4-clover. The 4-clover is the main goal.
+- making an app that shows live feed of camera and detecting arease with high chances of finding a 4-clover
+
+
+Setting up this procjet will need the following
+- Setting clear goal to succes on th image detection part
+- Setting good hypothesis in the different part of the goals
+- Getting data to train and test on
+- Defining some good neural networks to train
+- Getting theory about neural network and training
+- writing the applicationtion to test and asses how good the model is at prediction on the different parts of the image detection...
+- Getting theory about making an app
